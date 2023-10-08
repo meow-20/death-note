@@ -1,0 +1,243 @@
+
+@font-face{
+    font-family: 'Death Note';
+    src:local(Death Note);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-size: 1rem;
+    font-weight: 200;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+.circlepointer{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    position: absolute;
+    opacity: .9;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 1000;
+}
+.main{
+    width: 100%;
+    background-color: black;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: black;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 25px;
+}
+.nav a{
+    text-decoration: none;
+    font-family: 'DEATH FONT ver1.0';
+    font-size: 1.8vw;
+}
+.title{
+    margin-top: 100px;
+    margin-left: 120px;
+}
+#note{
+    margin-left: 200px;
+}
+.title h1{
+    font-family: 'DEATH FONT ver1.0';
+    opacity: .7;
+    font-size: 9rem;
+}
+.note-wrapper{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.note-wrapper p{
+    font-size: 1.2rem;
+    text-align: right;
+    font-weight: 400;
+}
+.writer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 60px;
+    margin-right: 60px;
+}
+.writer h2{
+    font-size: .8rem;
+    text-transform: uppercase;
+}
+.hero-footer{
+    width: 100%;
+    position: absolute;
+    bottom: 8px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero-footer a{
+    text-decoration: none;
+    font-size: .7rem;
+    text-transform: uppercase;
+}
+.hero-footer .icon-set{
+    margin-right: 70px;
+    display: flex;
+    gap: 5px;
+}
+.hero-footer .circle{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #888;
+}
+
+
+
+/* Second page designing */
+.second{
+    padding-left: 10px;
+    padding-top: 120px;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+.characters{
+    position: relative;
+    display: flex;
+    align-items: last baseline;
+    justify-content: space-between;
+    width: 95%;
+    padding: 0 3vw 40px 20px;
+    border-bottom: 1px solid #888;
+}
+.characters h1{
+    padding-top: 30px;
+    font-family: 'DEATH FONT ver1.0';
+    opacity: .6;
+    font-size: 4rem;
+}
+.characters h5{
+    font-family: 'Death Note';
+    letter-spacing: 2px;
+    opacity: 1;
+}
+.firstChar{
+    border-top: 1px solid #888;
+}
+.characters img{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    height: 190%;
+    z-index: 10;
+}
+
+
+
+/* third page desiging */
+.about{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+.third{
+    width: 100%;
+    height: 100vh;
+    padding-left: 30vw;
+    padding-top: 20vh;
+    padding-right: 10vw;
+    background-color: black;
+    position: relative;
+}
+.third img{
+    margin-left: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.third p{
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-size: 1.2vw;
+}
+.third h5{
+    opacity: .9;
+    font-size: 1.8vw;
+    font-family: 'Death Note';
+}
+.third #read-more{
+    padding: 8px;
+    opacity: .8;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Death Note';
+    font-size: 1.8vw;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+.his-journey{
+    position: absolute;
+    left: 50px;
+    bottom: 40px;
+    display: block;
+}
+.his-journey a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+/* footer */
+.footer{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    padding: 30px;
+}
+#footer-left{
+    display: flex;
+}
+#footer-left h5{
+    margin-right: 17px;
+}
+#footer-right a{
+    text-decoration: none;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-left: 14px;
+}
+
+
+/* for animation */
+.bounding{
+    width: fit-content;
+    overflow: hidden;
+}
+.bounded-element{
+    transform: translateY(200%);
+}
+
